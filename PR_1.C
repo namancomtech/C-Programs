@@ -1,19 +1,19 @@
 // WAP to display days in a calendar format of an entered month of year 2022.
 /* By:
    Author Name: Naman Sharma
-   Qualification: Programmer
+   Qualification: Programmer (BCA)
 */
 
 #include<stdio.h>
 #include<stdlib.h>
-#include<stdio.h>
-
+#include<unistd.h>
 
 void main()
 {
 int a,j,h,i=1,b=1,m;
 void exit(int);
-clrscr();
+
+
 
 printf("Enter any Month of year 2022: ");
 scanf("%d",&m);
@@ -33,7 +33,7 @@ switch(m)
   case 11: a=3;j=31;break;
   case 12: a=5;j=30;break;
   default: printf("\a\aInvalid Month");
-	   sleep(2);
+	       sleep(2);
            exit(0);
 }
 
@@ -72,6 +72,6 @@ for(i;i<=j;i++)
 
 }
 
- getch();
+return;
 
 }
